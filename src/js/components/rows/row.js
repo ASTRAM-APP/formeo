@@ -184,7 +184,7 @@ export default class Row extends Component {
       return
     }
 
-    const width = parseFloat((100 / columns.length).toFixed(3)) / 1
+    const width = parseFloat((99.9 / columns.length).toFixed(3)) / 1
 
     columns.forEach(column => {
       column.removeClasses(bsGridRegEx)
