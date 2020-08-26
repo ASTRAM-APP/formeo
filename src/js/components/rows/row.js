@@ -184,7 +184,7 @@ export default class Row extends Component {
       return
     }
 
-    const width = parseFloat((100 / columns.length).toFixed(1)) / 1
+    const width = parseFloat((100 / columns.length).toFixed(3)) / 1
 
     columns.forEach(column => {
       column.removeClasses(bsGridRegEx)
@@ -261,7 +261,7 @@ export default class Row extends Component {
     const curVal = columns
       .map(Column => {
         const width = Column.get('config.width') || ''
-        return Number(width.replace('%', '')).toFixed(1)
+        return Number(width.replace('%', '')).toFixed(3)
       })
       .join(',')
     if (pMapVal.length) {

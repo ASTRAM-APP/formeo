@@ -5,7 +5,7 @@ class ImageControl extends Control {
     const imgConfig = {
       tag: 'img',
       attrs: {
-        src: 'dist/demo/assets/img/formeo-logo.svg',
+        src: '/dist/demo/assets/img/formeo-logo.svg',
         style: 'width:100px;',
       },
       config: {
