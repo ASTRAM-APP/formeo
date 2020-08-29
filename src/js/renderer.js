@@ -189,7 +189,7 @@ export default class FormeoRenderer {
       if (field.config.label === 'Table') {
         field.config.label = ''
       }
-      if (field.config.label === '' && field.tag.label === 'input'){
+      if (field.config.label === '' && field.tag === 'input'){
         field.config.label = ' ';
       }
       return this.cacheComponent(Object.assign({}, field, { id: this.prefixId(id) }))
